@@ -19,7 +19,10 @@ const Nagivation = () => {
         <li><Link to='/about'>About</Link></li>
         
         {token !== null ?
+        <>
+        <li><Link to='/member/dashboard'>Dashboard</Link></li>
           <li><Link to='#' onClick={() => handleLogout()}>Logout</Link></li>
+          </>
           : <>
             <li><Link to='/login'>Login</Link></li>
             <li><Link to='/register'>Register</Link></li>

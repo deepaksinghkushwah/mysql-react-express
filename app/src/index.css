@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: "mina";
+}
 @layer base {
   input{
     @apply border shadow p-2 text-black bg-white rounded-md;
